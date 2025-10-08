@@ -116,9 +116,10 @@ uv venv
 
 ### Install and Synchronize the Package
 
-This will install the package from `pyproject.toml`
+This will install the package from `pyproject.toml`:
 
 ```bash
 uv sync
 ```
+
 
