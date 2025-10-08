@@ -1,63 +1,106 @@
-# Uv is 100x faster than pip because it's written in Rust
+# UV Package Manager
 
-How to install uv
-bash'''
+UV is 100x faster than pip because it's written in Rust.
+
+## Installation
+
+Install UV using pip:
+
+```bash
 pip install uv
-'''
+```
 
-Check uv has been installed
-bash'''
+## Verify Installation
+
+Check if UV has been installed:
+
+```bash
 uv
-'''
+```
 
-Check our python version
-bash'''
+## Python Version Management
+
+### List Available Python Versions
+
+Check available Python versions:
+
+```bash
 uv python list
-'''
+```
 
-If we want to install a particular python installation 
-bash'''
+### Install Specific Python Version
+
+Install a particular Python version:
+
+```bash
 uv python install 3.12
-'''
+```
 
-Search particular version
-bash'''
+### Find Python Version
+
+Search for a particular version:
+
+```bash
 uv python find 3.12
-'''
+```
 
-For uninstall the python version
-bash'''
+### Uninstall Python Version
+
+Uninstall a Python version:
+
+```bash
 uv python uninstall 3.12
-'''
+```
 
-Running python script
-bash'''
+## Running Python Scripts
+
+### Basic Run
+
+Run a Python script:
+
+```bash
 uv run main.py
-'''
+```
 
-If we want to use specify of python version when we're running particular script
-bash'''
+### Run with Specific Python Version
+
+Specify a Python version when running a script:
+
+```bash
 uv run --python 3.9.21 main.py
-'''
+```
 
-Run python script with the dependency hasn't installed yet
-bash'''
-# import rich
-# import requests
+### Run with Dependencies
+
+Run a Python script with dependencies that haven't been installed yet:
+
+```bash
+# Script uses rich and requests
 uv run --with rich --with requests --python 3.9.12 main.py
-'''
+```
 
-Create project with uv
-bash'''
+## Project Management
+
+### Create New Project
+
+Initialize a new project with UV:
+
+```bash
 uv init
-'''
+```
 
-Add dependency
-bash'''
+### Add Dependency
+
+Add a dependency to your project:
+
+```bash
 uv add requests
-'''
+```
 
-Remove dependency
-bash'''
+### Remove Dependency
+
+Remove a dependency from your project:
+
+```bash
 uv remove requests
-'''
+```
