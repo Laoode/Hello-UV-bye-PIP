@@ -104,3 +104,20 @@ Remove a dependency from your project:
 ```bash
 uv remove requests
 ```
+
+### Create venv
+
+Create a virtual environment with uv:
+
+```bash
+uv venv
+# . .venv\Scripts\activate
+```
+
+### Install and Synchronize the Package
+
+This will install the package from pyproject.toml
+
+```bash
+uv sync
+```
